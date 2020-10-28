@@ -96,28 +96,9 @@
   }
 }
 
-[type="checkbox"] {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-[type="checkbox"] + label {
-  width: 34px;
-  height: 34px;
-  margin: 0;
-
-  border: 2px solid #FFFFFF;
-  border-radius: 10px;
-}
-
-
-[type="checkbox"]:checked + label {
-  border: 0;
-  background: url('../images/icon-check.svg') no-repeat center / 34px;
+.form-control.dropdown-toggle:hover {
+  & + .form-control-border:before {
+    opacity: 1;
+    transition: 0.5s;
+  }
 }

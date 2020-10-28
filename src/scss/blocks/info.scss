@@ -89,11 +89,14 @@
 
 
 .info-card-3 {
+  position: relative;
+  z-index: 3;
+
   &:after {
     top: 151px;
     left: 0;
 
-    width: 331px;
+    width: 123%;
     height: 262px;
     background: url('../images/table.png') no-repeat top / contain;
   }

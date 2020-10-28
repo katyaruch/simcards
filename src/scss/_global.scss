@@ -6,6 +6,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -14,7 +16,8 @@ body {
   min-width: 1200px !important;
   // height: auto;
   position: relative;
-
+  
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
 }

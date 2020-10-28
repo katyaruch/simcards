@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('components/_head.html')
+
+<body>
+  @@include('components/_header.html')
+  <!-- WRITE CODE HERE -->
+
+  <section class="main" id="main">
+    <div class="container">
+      <div class="main-block">
+        <div class="row justify-content-between">
+          <a href="#info" class="btn--info">
+            <span class="btn btn--info-icon">
+              <span class="krug krug-1"></span>
+              <span class="krug krug-2"></span>
+            </span>
+            <span class="btn-text">Как это работает?</span>
+          </a>
+          <div class="dropdown">
+            <!-- <label class="form-control-wrapper"> -->
+              <button class="form-control dropdown-toggle" data-toggle="dropdown" value="Выберите страну" readonly>Выберите страну</button>
+              <span class="form-control-border"></span>
+            <!-- </label> -->
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">США</a>
+              <a href="#" class="dropdown-item">США</a>
+              <a href="#" class="dropdown-item">США</a>
+              <a href="#" class="dropdown-item">США</a>
+              <a href="#" class="dropdown-item">США</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <form class="w-100">
+            <label class="form-control-wrapper">
+              <input type="text" name="search" class="form-control" placeholder="Введите необходимый сервис">
+              <span class="form-control-border"></span>
+              <button type="submit" class="form-control-search">
+                @@include('images/icon-search.svg')
+              </button>
+            </label>
+          </form>
+        </div>
+        <div class="row">
+          <div class="table-wrapper">
+            <div class="main-table table">
+              <div class="table-row">
+                <div class="table-col">
+                  <span class="icon">
+                    <img src="images/icon-check.svg" alt="icon">
+                  </span>
+                </div>
+                <div class="table-col">
+                  Сайт
+                </div>
+                <div class="table-col">
+                  Наличие
+                </div>
+                <div class="table-col">
+                  Цена за шт.
+                </div>
+                <div class="table-col">
+                  Перейти
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-col">
+                  <span class="icon">
+                    <img src="images/icon-check.svg" alt="icon">
+                  </span>
+                </div>
+                <div class="table-col">
+                  <a href="#">Сайт</a>
+                </div>
+                <div class="table-col">
+                  Наличие
+                </div>
+                <div class="table-col">
+                  Цена за шт.
+                </div>
+                <div class="table-col">
+                  <a href="#">Перейти</a>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-col">
+                  <span class="icon">
+                    <img src="images/icon-check.svg" alt="icon">
+                  </span>
+                </div>
+                <div class="table-col">
+                  <a href="#">Сайт</a>
+                </div>
+                <div class="table-col">
+                  Наличие
+                </div>
+                <div class="table-col">
+                  Цена за шт.
+                </div>
+                <div class="table-col">
+                  <a href="#">Перейти</a>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-col">
+                  <span class="icon">
+                    <img src="images/icon-check.svg" alt="icon">
+                  </span>
+                </div>
+                <div class="table-col">
+                  <a href="#">Сайт</a>
+                </div>
+                <div class="table-col">
+                  Наличие
+                </div>
+                <div class="table-col">
+                  Цена за шт.
+                </div>
+                <div class="table-col">
+                  <a href="#">Перейти</a>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-col">
+                  <span class="icon">
+                    <img src="images/icon-check.svg" alt="icon">
+                  </span>
+                </div>
+                <div class="table-col">
+                  <a href="#">Сайт</a>
+                </div>
+                <div class="table-col">
+                  Наличие
+                </div>
+                <div class="table-col">
+                  Цена за шт.
+                </div>
+                <div class="table-col">
+                  <a href="#">Перейти</a>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-col">
+                  <span class="icon">
+                    <img src="images/icon-check.svg" alt="icon">
+                  </span>
+                </div>
+                <div class="table-col">
+                  <a href="#">Сайт</a>
+                </div>
+                <div class="table-col">
+                  Наличие
+                </div>
+                <div class="table-col">
+                  Цена за шт.
+                </div>
+                <div class="table-col">
+                  <a href="#">Перейти</a>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="table-col">
+                  <span class="icon">
+                    <img src="images/icon-check.svg" alt="icon">
+                  </span>
+                </div>
+                <div class="table-col">
+                  <a href="#">Сайт</a>
+                </div>
+                <div class="table-col">
+                  Наличие
+                </div>
+                <div class="table-col">
+                  Цена за шт.
+                </div>
+                <div class="table-col">
+                  <a href="#">Перейти</a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn-more">
+              <!-- @@include('images/btn-more-1.svg') -->
+              <span class="btn-more-text">Больше сервисов...</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section info sticky-top" id="info" data-1100="opacity: 1; z-index: 1;" data-1200="opacity: 0;">
+    <div class="container">
+      <div class="section-block">
+        <div class="section-col">
+          <div class="info-card info-card-1" data-0="opacity: 0;" data-775="opacity: 1;">
+            <p class="info-card-text">
+              Привет, это <b>simcards.shop</b> - виртуальный помощник для поиска сим-карт по самым выгодным ценам
+            </p>
+            <a href="#info-card-2" class="btn--next" title="Дальше">@@include('images/icon-angle.svg')</a>
+          </div>
+          <div class="info-card info-card-2" id="info-card-2" data-775="opacity: 0;" data-900="opacity: 1;">
+            <p class="info-card-text">
+              Приобрести сим-карту просто! Достаточно выбрать страну и ввести сервис для, которого предназначены сим, в поисковой строке
+            </p>
+            <a href="#info-card-3" class="btn--next" title="Дальше">@@include('images/icon-angle.svg')</a>
+          </div>
+        </div>
+        <div class="section-col">
+          <div class="info-card info-card-3" id="info-card-3" data-900="opacity: 0;" data-1000="opacity: 1;">
+            <p class="info-card-text">
+              Далее, таблица предоставит топ выгодных предложений по вашему запросу
+            </p>
+            <a href="#info-card-4" class="btn--next" title="Дальше">@@include('images/icon-angle.svg')</a>
+          </div>
+        </div>
+        <div class="section-col">
+          <div class="info-card info-card-4" id="info-card-4" data-1000="opacity: 0;" data-1100="opacity: 1;">
+            <p class="info-card-text">
+              Теперь вам остается выбрать лучшие условия и нажать на кнопку “перейти” в строке выбранного варианта. Приятного пользования!
+            </p>
+            <a href="#main" class="btn--up" title="Выбрать">
+              <span class="btn">
+                <span class="krug krug-1"></span>
+                <span class="krug krug-2"></span>
+              @@include('images/icon-angle.svg')
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section best" data-1200="opacity: 0;" data-1300="opacity: 1;">
+    <div class="container">
+      <div class="section-block">
+        <h2 href="#" class="title">
+          <span class="title-text">Лучшие предложения</span>
+        </h2>
+        <div class="best-list">
+          <div class="best-card">
+            <div class="best-card-header">
+              <img src="images/online-sim.svg" alt="Online Sim">
+            </div>
+            <div class="best-card-inner">
+              <div class="best-card-row">
+                <img class="best-card-serv-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Сервис</p>
+                  <p class="best-card-value">Instagram</p>
+              </div>
+              <div class="best-card-row">
+                  <img class="best-card-country-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Страна:</p>
+                  <p class="best-card-value">USA</p>
+              </div>
+              <div class="best-card-row best-card-cash">
+                  <p class="best-card-title">Наличие:</p>
+                  <p class="best-card-value">2 345 шт.</p>
+              </div>
+              <div class="best-card-row best-card-price">
+                  <p class="best-card-title">Цена за шт.:</p>
+                  <p class="best-card-value">15 руб.</p>
+              </div>
+              <a href="#" class="btn">
+                <span class="btn-link">Перейти</span>
+                <span class="krug krug-1"></span>
+                <span class="krug krug-2"></span>
+              </a>
+            </div>
+          </div>
+          <div class="best-card">
+            <div class="best-card-header">
+              <img src="images/online-sim.svg" alt="Online Sim">
+            </div>
+            <div class="best-card-inner">
+              <div class="best-card-row">
+                <img class="best-card-serv-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Сервис</p>
+                  <p class="best-card-value">Instagram</p>
+              </div>
+              <div class="best-card-row">
+                  <img class="best-card-country-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Страна:</p>
+                  <p class="best-card-value">USA</p>
+              </div>
+              <div class="best-card-row best-card-cash">
+                  <p class="best-card-title">Наличие:</p>
+                  <p class="best-card-value">2 345 шт.</p>
+              </div>
+              <div class="best-card-row best-card-price">
+                  <p class="best-card-title">Цена за шт.:</p>
+                  <p class="best-card-value">15 руб.</p>
+              </div>
+              <a href="#" class="btn">
+                <span class="btn-link">Перейти</span>
+                <span class="krug krug-1"></span>
+                <span class="krug krug-2"></span>
+              </a>
+            </div>
+          </div>
+          <div class="best-card">
+            <div class="best-card-header">
+              <img src="images/online-sim.svg" alt="Online Sim">
+            </div>
+            <div class="best-card-inner">
+              <div class="best-card-row">
+                <img class="best-card-serv-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Сервис</p>
+                  <p class="best-card-value">Instagram</p>
+              </div>
+              <div class="best-card-row">
+                  <img class="best-card-country-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Страна:</p>
+                  <p class="best-card-value">USA</p>
+              </div>
+              <div class="best-card-row best-card-cash">
+                  <p class="best-card-title">Наличие:</p>
+                  <p class="best-card-value">2 345 шт.</p>
+              </div>
+              <div class="best-card-row best-card-price">
+                  <p class="best-card-title">Цена за шт.:</p>
+                  <p class="best-card-value">15 руб.</p>
+              </div>
+              <a href="#" class="btn">
+                <span class="btn-link">Перейти</span>
+                <span class="krug krug-1"></span>
+                <span class="krug krug-2"></span>
+              </a>
+            </div>
+          </div>
+          <div class="best-card">
+            <div class="best-card-header">
+              <img src="images/online-sim.svg" alt="Online Sim">
+            </div>
+            <div class="best-card-inner">
+              <div class="best-card-row">
+                <img class="best-card-serv-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Сервис</p>
+                  <p class="best-card-value">Instagram</p>
+              </div>
+              <div class="best-card-row">
+                  <img class="best-card-country-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Страна:</p>
+                  <p class="best-card-value">USA</p>
+              </div>
+              <div class="best-card-row best-card-cash">
+                  <p class="best-card-title">Наличие:</p>
+                  <p class="best-card-value">2 345 шт.</p>
+              </div>
+              <div class="best-card-row best-card-price">
+                  <p class="best-card-title">Цена за шт.:</p>
+                  <p class="best-card-value">15 руб.</p>
+              </div>
+              <a href="#" class="btn">
+                <span class="btn-link">Перейти</span>
+                <span class="krug krug-1"></span>
+                <span class="krug krug-2"></span>
+              </a>
+            </div>
+          </div>
+          <div class="best-card">
+            <div class="best-card-header">
+              <img src="images/online-sim.svg" alt="Online Sim">
+            </div>
+            <div class="best-card-inner">
+              <div class="best-card-row">
+                <img class="best-card-serv-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Сервис</p>
+                  <p class="best-card-value">Instagram</p>
+              </div>
+              <div class="best-card-row">
+                  <img class="best-card-country-img" src="images/icon-check.svg" alt="Сервис">
+                  <p class="best-card-title">Страна:</p>
+                  <p class="best-card-value">USA</p>
+              </div>
+              <div class="best-card-row best-card-cash">
+                  <p class="best-card-title">Наличие:</p>
+                  <p class="best-card-value">2 345 шт.</p>
+              </div>
+              <div class="best-card-row best-card-price">
+                  <p class="best-card-title">Цена за шт.:</p>
+                  <p class="best-card-value">15 руб.</p>
+              </div>
+              <a href="#" class="btn">
+                <span class="btn-link">Перейти</span>
+                <span class="krug krug-1"></span>
+                <span class="krug krug-2"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="promo">
+    <div class="container">
+      <div class="promo-list">
+        <div class="promo-block promo-block-1">Реклама</div>
+        <div class="promo-block promo-block-2">Реклама</div>
+        <div class="promo-block promo-block-3">Реклама</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STOP WRITE CODE -->
+  @@include('components/_footer.html')
+  @@include('components/_scripts.html')
+</body>
+
+</html>

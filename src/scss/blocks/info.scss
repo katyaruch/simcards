@@ -1,0 +1,133 @@
+.info {
+  // position: sticky;
+  // top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info .section-block {
+  display: flex;
+}
+
+.info-card {
+  position: relative;
+  height: 442px;
+  margin-bottom: 22px;
+  padding: 30px;
+
+  background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+  box-shadow: -5px -5px 10px rgba(56, 57, 77, 0.5), 5px 5px 10px #0F121B;
+  border-radius: 20px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    border-radius: inherit;
+    z-index: 2;
+  }
+
+  .btn--next {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 3;
+  }
+
+  .btn--up {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+.info-card:hover {
+  .btn--next svg .hover {
+    opacity: 1;
+  }
+}
+
+.section-col:first-child .info-card {
+  height: 210px;
+  padding-left: 140px;
+}
+
+.info-card-1:after {
+  top: 45px;
+  left: -60px;
+
+  width: 173px;
+  height: 87px;
+  background: url('../images/hello.png') no-repeat top / contain;
+}
+
+.info-card-2 {
+  &:after {
+    top: 12px;
+    left: -45px;
+
+    width: 158px;
+    height: 139px;
+    background: url('../images/country.png') no-repeat top / contain;
+  }
+
+  .btn--next {
+    transform: rotate(-90deg);
+  }
+}
+
+
+.info-card-3 {
+  &:after {
+    top: 151px;
+    left: 0;
+
+    width: 331px;
+    height: 262px;
+    background: url('../images/table.png') no-repeat top / contain;
+  }
+
+  &:before {
+    background: linear-gradient(103.37deg, #1C1C24 13.75%, rgba(28, 28, 36, 0.576497) 30.68%, rgba(28, 28, 36, 0) 94.11%);
+  }
+
+  .btn--next {
+    transform: rotate(-90deg);
+  }
+}
+
+.info-card-4 {
+  background: url('../images/step-final-bg.svg') no-repeat top / cover,
+              linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+
+  &:after {
+    top: 232px;
+    left: 0;
+
+    width: 347px;
+    height: 162px;
+    background: url('../images/step-final.png') no-repeat top / contain;
+    pointer-events: none;
+  }
+
+  &:before {
+    background: linear-gradient(91.81deg, #1C1C24 9.64%, rgba(28, 28, 36, 0) 58.27%);
+    pointer-events: none;
+  }
+}
+
+.info-card-text {
+  position: relative;
+  z-index: 3;
+}

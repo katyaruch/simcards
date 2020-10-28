@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 1200px !important;
+  // height: auto;
+  position: relative;
+
+  color: #fff;
+  background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+button:focus,
+input:focus {
+  outline: transparent;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1330px;
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.section {
+  min-height: 775px;
+}
+
+.section-block {
+  // display: flex;
+  width: 100%;
+  padding: 0 110px;
+}
+
+.section-col {
+  width: 100%;
+  max-width: 310px;
+  margin-right: 20px;
+
+  // background-color: #fff;
+
+  &:first-child {
+    min-width: 420px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

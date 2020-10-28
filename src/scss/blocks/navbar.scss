@@ -1,0 +1,84 @@
+.navbar {
+  padding: 50px 0 20px;
+}
+
+.navbar-brand {
+  color: #F2F2F2;
+}
+
+.navbar-brand-text {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.navbar-toggler {
+  width: 65px;
+  height: 65px;
+  padding: 20px 12px;
+  margin-left: 30px;
+  
+  background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+  box-shadow: -2px -2px 4px rgba(56, 57, 77, 0.5), 2px 2px 4px #0F121B;
+  border-radius: 14.3px;
+  transition: 0.5s;
+}
+
+.navbar-toggler-line {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-bottom: 7px;
+  border-radius: 15px;
+
+  background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+  box-shadow: inset -1px -1px 1px rgba(56, 57, 77, 0.5), inset 1px 1px 1px #0F121B;
+  opacity: 1;
+  transition: 1s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: auto 0;
+    border-radius: 15px;
+    background: linear-gradient(270deg, #65C1DE 0%, #4669C3 100%);
+    transition: 0.5s;
+  }
+}
+
+.navbar-toggler:hover {
+  .navbar-toggler-line:before  {
+    width: calc(100% - 2px);
+    transition: 0.5s;
+  }
+}
+
+.navbar-toggler:active {
+  box-shadow: inset -2px -2px 4px rgba(56, 57, 77, 0.5), inset 2px 2px 4px #0F121B;
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-line {
+
+  &:nth-child(1) {
+    transform: translateY(11px) rotate(-45deg);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: translateY(-11px) rotate(45deg);
+  }
+}

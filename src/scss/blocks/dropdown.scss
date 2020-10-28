@@ -1,0 +1,67 @@
+.dropdown {
+  width: 310px;
+}
+
+.dropdown-toggle {
+  height: auto;
+  line-height: 1;
+  text-align: left;
+
+  background: url('../images/icon-angle.svg') no-repeat center right 20px,
+              linear-gradient(180deg,#1c1c24 0,#1c1c24 100%);
+
+  &:after {
+    display: none;
+  }
+}
+
+.dropdown-toggle[aria-expanded="true"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.dropdown-menu {
+  width: calc(100% - 8px);
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+  color: #fff;
+
+  border-radius: 14px;
+  box-shadow:  -1px -1px 1px rgba(56, 57, 77, 0.5),  1px 1px 1px #0F121B;
+}
+
+.dropdown-menu[x-placement="bottom-start"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.dropdown-item {
+  position: relative;
+  padding: 9px 20px 14px;
+  color: inherit;
+  background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+    box-shadow: inset -1px -1px 1px rgba(56, 57, 77, 0.5), inset 1px 1px 1px #0F121B;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.dropdown-item:hover {
+  color: inherit;
+}

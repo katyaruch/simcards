@@ -1,0 +1,123 @@
+.form-control-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.form-control {
+  position: relative;
+  width: calc(100% - 8px);
+  // height: calc(100% - 8px);
+  height: 45px;
+  padding: 14px 40px 15px 20px;
+  margin: 4px auto;
+
+  font-size: 16px;
+  color: #fff;
+
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(180deg, #1C1C24 0%, #1C1C24 100%);
+  box-shadow: -1px -1px 1px rgba(56, 57, 77, 0.5), 1px 1px 1px #0F121B;
+  z-index: 1;
+}
+
+.form-control-border {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  box-shadow: inset -1px -1px 1px rgba(56, 57, 77, 0.5), inset 1px 1px 1px #0F121B;
+  z-index: 0;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    margin: auto;
+    border-radius: 14px;
+    background: linear-gradient(270deg, #65C1DE 0%, #4669C3 100%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+}
+
+.form-control-search {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+
+  padding: 0;
+  line-height: 1;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  svg .hover {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  &:hover svg .hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+.form-control:placeholder {
+  color: rgba(#fff, 0.5);
+}
+
+.form-control:hover,
+.form-control:focus  {
+  outline: none 0;
+  color: #fff;
+
+  & ~ .form-control-search svg .hover {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+.form-control:focus {
+  & + .form-control-border:before {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+[type="checkbox"] + label {
+  width: 34px;
+  height: 34px;
+  margin: 0;
+
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+
+[type="checkbox"]:checked + label {
+  border: 0;
+  background: url('../images/icon-check.svg') no-repeat center / 34px;
+}
